@@ -3,7 +3,7 @@
   "version": "0.2.0",
   "manifest_version": 3,
   "background": {
-    "service_worker": "background.js",
+    "service_worker": "src/background.ts",
     "type": "module"
   },
   "icons": {
@@ -20,9 +20,9 @@
     }
   },
   "side_panel": {
-    "default_path": "sidepanel.html"
+    "default_path": "src/sidepanel/index.tsx"
   },
-  "options_page": "options.html",
+  "options_page": "src/options/index.tsx",
   "permissions": ["debugger", "tabs", "sidePanel", "storage", "activeTab", "commands"],
   "host_permissions": ["<all_urls>"],
   "commands": {
